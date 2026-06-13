@@ -5,26 +5,19 @@ A website for Vector's Creations
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vector's Domain</title>
+<title>Vector Domain</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
 body{
-    background: linear-gradient(135deg,#000000,#111111,#1a1a1a);
-    min-height:100vh;
+    margin:0;
+    font-family:Arial;
+    background:linear-gradient(135deg,#000,#111,#1a1a1a);
     color:white;
 }
 
 header{
-    padding:25px;
     text-align:center;
+    padding:25px;
     border-bottom:1px solid rgba(255,215,0,0.2);
 }
 
@@ -32,98 +25,35 @@ header{
     font-size:3rem;
     font-weight:bold;
     color:#FFD700;
-    text-shadow:0 0 15px rgba(255,215,0,0.5);
 }
 
-.subtitle{
-    color:#d4af37;
-    margin-top:10px;
-}
+.subtitle{ color:#d4af37; }
 
 .container{
-    max-width:1200px;
-    margin:auto;
-    padding:50px 20px;
-}
-
-.hero{
     text-align:center;
-    margin-bottom:50px;
+    padding:60px 20px;
 }
 
-.hero h1{
-    font-size:3rem;
-    color:#FFD700;
-}
-
-.hero p{
-    margin-top:15px;
-    color:#ccc;
-}
-
-.buttons{
-    margin-top:35px;
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-/* Glass Buttons */
 .glass-btn{
-    padding:15px 35px;
-    border-radius:20px;
-    border:1px solid rgba(255,255,255,0.15);
+    display:inline-block;
+    margin:10px;
+    padding:15px 30px;
+    border-radius:18px;
     background:rgba(255,255,255,0.08);
-    backdrop-filter:blur(15px);
-    -webkit-backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.2);
     color:#FFD700;
     text-decoration:none;
-    font-weight:bold;
+    backdrop-filter:blur(15px);
     transition:0.3s;
-    box-shadow:
-        0 8px 32px rgba(0,0,0,0.4),
-        inset 0 1px 1px rgba(255,255,255,0.2);
-    cursor:pointer;
 }
 
 .glass-btn:hover{
-    transform:translateY(-4px);
+    transform:translateY(-5px);
     background:rgba(255,215,0,0.15);
-    box-shadow:0 0 25px rgba(255,215,0,0.4);
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:rgba(255,255,255,0.05);
-    backdrop-filter:blur(15px);
-    border:1px solid rgba(255,215,0,0.15);
-    border-radius:20px;
-    padding:25px;
-}
-
-.card h2{
-    color:#FFD700;
-    margin-bottom:10px;
-}
-
-.card p{
-    color:#ddd;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    margin-top:50px;
-    color:#888;
 }
 </style>
 </head>
+
 <body>
 
 <header>
@@ -133,40 +63,18 @@ footer{
 
 <div class="container">
 
-    <div class="hero">
-        <h1>Premium Minecraft Creations</h1>
-        <p>Download mods, texture packs, and custom projects.</p>
+<h1 style="color:#FFD700;">Welcome</h1>
+<p>Choose a page below</p>
 
-        <div class="buttons">
-            <div class="glass-btn" onclick="alert('No mods yet')">Mods</div>
-            <div class="glass-btn" onclick="alert('No texture packs yet')">Texture Packs</div>
-            <div class="glass-btn" onclick="alert('No downloads yet')">Downloads</div>
-            <div class="glass-btn" onclick="alert('Discord: itzvectorr_')">Discord</div>
-        </div>
-    </div>
-
-    <div class="cards">
-        <div class="card">
-            <h2>Latest Mod</h2>
-            <p>Nothing uploaded yet.</p>
-        </div>
-
-        <div class="card">
-            <h2>Featured Pack</h2>
-            <p>No texture packs available yet.</p>
-        </div>
-
-        <div class="card">
-            <h2>Updates</h2>
-            <p>Check back soon for updates.</p>
-        </div>
-    </div>
+<!-- LINKS TO OTHER PAGES -->
+<a class="glass-btn" href="mods.html">Mods</a>
+<a class="glass-btn" href="textures.html">Texture Packs</a>
+<a class="glass-btn" href="downloads.html">Downloads</a>
+<a class="glass-btn" href="discord.html">Discord</a>
 
 </div>
 
-<footer>
-    © 2026 Vector Domain
-</footer>
-
 </body>
 </html>
+
+
