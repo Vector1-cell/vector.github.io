@@ -4,6 +4,56 @@
 <title>Texture Packs</title>
 
 <style>
+    body{
+    margin:0;
+    font-family:Arial;
+    color:white;
+    text-align:center;
+    min-height:100vh;
+
+    /* 🌅 Sunset background */
+    background: linear-gradient(120deg,
+        #000000,
+        #1a0a0a,
+        #3b1c0f,
+        #ff4d00,
+        #ffb347
+    );
+    background-size: 400% 400%;
+    animation: sunset 12s ease infinite;
+}
+
+@keyframes sunset{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.glass{
+    background:rgba(255,255,255,0.07);
+    border:1px solid rgba(255,215,0,0.2);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:30px;
+    display:inline-block;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 30px;
+    border-radius:15px;
+    background:rgba(255,215,0,0.15);
+    border:1px solid rgba(255,215,0,0.3);
+    color:#FFD700;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    background:rgba(255,215,0,0.25);
+}
 body{
     background:#000;
     color:white;
