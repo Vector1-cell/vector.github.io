@@ -71,7 +71,7 @@ header{
 <a class="glass-btn" href="textures.html">Texture Packs</a>
 <a class="glass-btn" href="downloads.html">Downloads</a>
 <a class="glass-btn" href="discord.html">Discord</a>
-
+<a class="glass-btn" href="patreon.html">Patreon</a>
 </div>
 
 </body>
