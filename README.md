@@ -7,9 +7,7 @@
 <!-- 🎮 Minecraft Pixel Font -->
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
-<style>
-
-/* 🌅 Animated sunset background */
+<style>/* 🌅 Animated sunset background */
 body{
     margin:0;
     color:white;
