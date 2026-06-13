@@ -6,7 +6,7 @@ A website for Vector's Creations
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ved Mods</title>
+<title>Vector Domain</title>
 
 <style>
 *{
@@ -84,13 +84,13 @@ header{
     box-shadow:
         0 8px 32px rgba(0,0,0,0.4),
         inset 0 1px 1px rgba(255,255,255,0.2);
+    cursor:pointer;
 }
 
 .glass-btn:hover{
     transform:translateY(-4px);
     background:rgba(255,215,0,0.15);
-    box-shadow:
-        0 0 25px rgba(255,215,0,0.4);
+    box-shadow:0 0 25px rgba(255,215,0,0.4);
 }
 
 .cards{
@@ -127,7 +127,7 @@ footer{
 <body>
 
 <header>
-    <div class="logo">VED MODS</div>
+    <div class="logo">Vector Domain</div>
     <div class="subtitle">Minecraft Mods & Texture Packs</div>
 </header>
 
@@ -138,34 +138,34 @@ footer{
         <p>Download mods, texture packs, and custom projects.</p>
 
         <div class="buttons">
-            <a href="#" class="glass-btn">Mods</a>
-            <a href="#" class="glass-btn">Texture Packs</a>
-            <a href="#" class="glass-btn">Downloads</a>
-            <a href="#" class="glass-btn">Discord</a>
+            <div class="glass-btn" onclick="alert('No mods yet')">Mods</div>
+            <div class="glass-btn" onclick="alert('No texture packs yet')">Texture Packs</div>
+            <div class="glass-btn" onclick="alert('No downloads yet')">Downloads</div>
+            <div class="glass-btn" onclick="alert('Discord: itzvectorr_')">Discord</div>
         </div>
     </div>
 
     <div class="cards">
         <div class="card">
             <h2>Latest Mod</h2>
-            <p>Showcase your newest Minecraft mod here.</p>
+            <p>Nothing uploaded yet.</p>
         </div>
 
         <div class="card">
             <h2>Featured Pack</h2>
-            <p>Highlight your best texture pack.</p>
+            <p>No texture packs available yet.</p>
         </div>
 
         <div class="card">
             <h2>Updates</h2>
-            <p>Post changelogs and announcements.</p>
+            <p>Check back soon for updates.</p>
         </div>
     </div>
 
 </div>
 
 <footer>
-    © 2026 Ved Mods
+    © 2026 Vector Domain
 </footer>
 
 </body>
