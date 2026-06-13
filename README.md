@@ -72,6 +72,22 @@ header{
 <a class="glass-btn" href="downloads.html">Downloads</a>
 <a class="glass-btn" href="discord.html">Discord</a>
 <a class="glass-btn" href="patreon.html">Patreon</a>
+<div style="margin-top:60px; padding:30px; border:1px solid rgba(255,215,0,0.2); border-radius:20px; background:rgba(255,255,255,0.05);">
+
+    <h2 style="color:#FFD700; font-size:2rem;">⭐ Support Me</h2>
+
+    <p style="color:#ccc; margin-top:10px;">
+        Join my Patreon to support development of Minecraft mods, texture packs, and future projects.
+    </p>
+
+    <a class="glass-btn" 
+       href="https://www.patreon.com/c/vectorr_11/membership" 
+       target="_blank"
+       style="margin-top:20px;">
+        Join Patreon
+    </a>
+
+</div>
 </div>
 
 </body>
