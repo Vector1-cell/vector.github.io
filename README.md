@@ -1,65 +1,21 @@
-# vector.github.io
-A website for Vector's Creations
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Vector Domain</title>
 
+<!-- 🎮 Minecraft Pixel Font -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
 <style>
+
+/* 🌅 Animated sunset background */
 body{
     margin:0;
-    font-family:Arial;
-    background:linear-gradient(135deg,#000,#111,#1a1a1a);
-    color:white;
-}
-
-header{
-    text-align:center;
-    padding:25px;
-    border-bottom:1px solid rgba(255,215,0,0.2);
-}
-
-.logo{
-    font-size:3rem;
-    font-weight:bold;
-    color:#FFD700;
-}
-
-.subtitle{ color:#d4af37; }
-
-.container{
-    text-align:center;
-    padding:60px 20px;
-}
-
-.glass-btn{
-    display:inline-block;
-    margin:10px;
-    padding:15px 30px;
-    border-radius:18px;
-    background:rgba(255,255,255,0.08);
-    border:1px solid rgba(255,255,255,0.2);
-    color:#FFD700;
-    text-decoration:none;
-    backdrop-filter:blur(15px);
-    transition:0.3s;
-}
-
-.glass-btn:hover{
-    transform:translateY(-5px);
-    background:rgba(255,215,0,0.15);
-}
-</style>
-body{
-    margin:0;
-    font-family:Arial;
     color:white;
     text-align:center;
     min-height:100vh;
 
-    /* 🌅 Sunset background */
     background: linear-gradient(120deg,
         #000000,
         #1a0a0a,
@@ -67,8 +23,11 @@ body{
         #ff4d00,
         #ffb347
     );
-    background-size: 400% 400%;
+
+    background-size:400% 400%;
     animation: sunset 12s ease infinite;
+
+    font-family: Arial;
 }
 
 @keyframes sunset{
@@ -77,19 +36,68 @@ body{
     100%{background-position:0% 50%;}
 }
 
+/* ⚡ NAVBAR */
+.navbar{
+    position:sticky;
+    top:0;
+    width:100%;
+    padding:15px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:rgba(0,0,0,0.75);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(255,215,0,0.25);
+
+    box-shadow:0 0 25px rgba(255,215,0,0.2);
+
+    font-family:'Press Start 2P', cursive;
+}
+
+.logo{
+    font-size:12px;
+    color:#FFD700;
+    text-shadow:0 0 10px rgba(255,215,0,0.8);
+}
+
+.nav-links{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.nav-links a{
+    font-size:9px;
+    color:#FFD700;
+    text-decoration:none;
+    padding:10px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    background:rgba(255,215,0,0.12);
+    box-shadow:0 0 15px rgba(255,215,0,0.6);
+    transform:translateY(-2px);
+}
+
+/* 🧊 Glass UI */
 .glass{
+    margin-top:40px;
+    display:inline-block;
+    padding:30px;
+    border-radius:20px;
     background:rgba(255,255,255,0.07);
     border:1px solid rgba(255,215,0,0.2);
     backdrop-filter:blur(15px);
-    border-radius:20px;
-    padding:30px;
-    display:inline-block;
 }
 
+/* ✨ Buttons */
 .btn{
     display:inline-block;
-    margin-top:20px;
-    padding:15px 30px;
+    margin:10px;
+    padding:15px 25px;
     border-radius:15px;
     background:rgba(255,215,0,0.15);
     border:1px solid rgba(255,215,0,0.3);
@@ -102,45 +110,49 @@ body{
     transform:translateY(-5px);
     background:rgba(255,215,0,0.25);
 }
+
+h1{
+    color:#FFD700;
+}
+
+p{
+    color:#ddd;
+}
+
+</style>
 </head>
 
 <body>
 
-<header>
-    <div class="logo">Vector Domain</div>
-    <div class="subtitle">Minecraft Mods & Texture Packs</div>
-</header>
+<!-- ⚡ NAVBAR -->
+<div class="navbar">
+    <div class="logo">VECTOR DOMAIN</div>
 
-<div class="container">
-
-<h1 style="color:#FFD700;">Welcome</h1>
-<p>Choose a page below</p>
-
-<!-- LINKS TO OTHER PAGES -->
-<a class="glass-btn" href="mods.html">Mods</a>
-<a class="glass-btn" href="textures.html">Texture Packs</a>
-<a class="glass-btn" href="downloads.html">Downloads</a>
-<a class="glass-btn" href="discord.html">Discord</a>
-<a class="glass-btn" href="patreon.html">Patreon</a>
-<div style="margin-top:60px; padding:30px; border:1px solid rgba(255,215,0,0.2); border-radius:20px; background:rgba(255,255,255,0.05);">
-
-    <h2 style="color:#FFD700; font-size:2rem;">⭐ Support Me</h2>
-
-    <p style="color:#ccc; margin-top:10px;">
-        Join my Patreon to support development of Minecraft mods, texture packs, and future projects.
-    </p>
-
-    <a class="glass-btn" 
-       href="https://www.patreon.com/c/vectorr_11/membership" 
-       target="_blank"
-       style="margin-top:20px;">
-        Join Patreon
-    </a>
-
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="mods.html">Mods</a>
+        <a href="textures.html">Textures</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="support.html">Support</a>
+        <a href="discord.html">Discord</a>
+    </div>
 </div>
+
+<!-- 🏠 MAIN CONTENT -->
+<h1>Welcome to Vector Domain</h1>
+<p>Minecraft Mods • Texture Packs • Future Projects</p>
+
+<div class="glass">
+
+    <h2>Explore</h2>
+
+    <a class="btn" href="mods.html">Mods</a>
+    <a class="btn" href="textures.html">Texture Packs</a>
+    <a class="btn" href="downloads.html">Downloads</a>
+    <a class="btn" href="support.html">Support Me</a>
+    <a class="btn" href="discord.html">Discord</a>
+
 </div>
 
 </body>
 </html>
-
-
