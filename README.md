@@ -1,7 +1,6 @@
 # vector.github.io
 A website for Vector's Creations
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
