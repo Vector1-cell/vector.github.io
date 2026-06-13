@@ -6,7 +6,7 @@ A website for Vector's Creations
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vector Domain</title>
+<title>Vector's Domain</title>
 
 <style>
 *{
