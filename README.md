@@ -1,5 +1,5 @@
 # vector.github.io
-A website to add my creations
+A website for Vector's Creations
 
 <!DOCTYPE html>
 <html lang="en">
